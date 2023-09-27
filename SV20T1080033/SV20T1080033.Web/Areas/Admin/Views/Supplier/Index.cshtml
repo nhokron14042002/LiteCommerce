@@ -1,0 +1,81 @@
+﻿
+@{
+    ViewBag.Title = " Danh sách nhà cung cấp";
+}
+
+
+<div class="box box-primary">
+    <div class="box-body">
+        <form action="#" method="get">
+            <div class="input-group">
+                <input type="text" name="searchValue" class="form-control" placeholder="Nhập tên nhà cung cấp cần tim.." spellcheck="false" data-ms-editor="true">
+                <span class="input-group-btn">
+                    <button type="submit" name="search" id="search-btn" class="btn btn-flat">
+                        <i class="fa fa-search"></i>
+                    </button>
+                    <a href="~/Admin/Supplier/Create" class="btn btn-xs btn-primary">
+                        <i class="fa fa-plus"></i> Bổ sung
+                    </a>
+                </span>
+            </div>
+        </form>
+        @* danh sach nhà cung cấp *@
+        <p style="margin:10px 0 10px 0">
+            Có <strong>1,234 </strong>nhà cung cấp, Hiện đang ở trang <strong>1</strong> trên tổng số <strong>200</strong>
+        </p>
+        <div class="table-responsive">
+            <table class="table table-borderd table-hover">
+                <thead class="btn-primary">
+                    <tr>
+                    <td>Tên nhà cung cấp</td>
+                    <td>Tên giao dịch</td>
+                    <td>Tỉnh thành</td>
+                    <td>Địa chỉ</td>
+                    <td>Điện thoại</td>
+                    <td>Email</td>
+                    <td>
+                    </td>
+                    </tr>
+                    
+
+                </thead>
+                <tbody>
+                    @for (int i = 1; i <= 10; i++)
+                    {
+                        <tr>
+
+                            <td>Công ty xuất khẩu thành hưng</td>
+                            <td>Công ty thành hưng</td>
+                            <td>Hà nội</td>
+                            <td>123 phùng hùng</td>
+                            <td>034342344</td>
+                            <td>phunghungcty@gmail.com</td>
+                            <td>
+                                <a href="~/Admin/Supplier/Edit/123" class="btn btn-xs btn-info">
+                                    <i class="fa fa-edit"></i>
+                                </a>
+
+                                <a href="~/Admin/Supplier/delete/123" class="btn btn-xs btn-danger">
+                                    <i class="fa fa-remove"></i>
+                                </a>
+
+                            </td>
+                        </tr>
+                    }
+
+                </tbody>
+            </table>
+
+        </div>
+        <div class="text-center">
+            <ul class="pagination">
+                <li><a href="#">1</a></li>
+                <li class="active"><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+

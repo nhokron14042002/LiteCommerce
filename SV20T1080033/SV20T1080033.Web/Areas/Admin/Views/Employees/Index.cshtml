@@ -1,0 +1,81 @@
+﻿@{
+    ViewBag.Title = " Danh sách nhân viên";
+}
+
+
+<div class="box box-primary">
+    <div class="box-body">
+        <form action="#" method="get">
+            <div class="input-group">
+                <input type="text" name="searchValue" class="form-control" placeholder="Nhập tên nhân viên cần tim.." spellcheck="false" data-ms-editor="true">
+                <span class="input-group-btn">
+                    <button type="submit" name="search" id="search-btn" class="btn btn-flat">
+                        <i class="fa fa-search"></i>
+                    </button>
+                    <a href="~/Admin/Employees/Create" class="btn btn-xs btn-primary">
+                        <i class="fa fa-plus"></i> Bổ sung
+                    </a>
+                </span>
+            </div>
+        </form>
+        @* danh sach nhà cung cấp *@
+        <p style="margin:10px 0 10px 0">
+            Có <strong>1,234 </strong>nhân viên, Hiện đang ở trang <strong>1</strong> trên tổng số <strong>200</strong>
+        </p>
+        <div class="table-responsive">
+            <table class="table table-borderd table-hover">
+                <thead class="btn-primary">
+                    <tr>
+                        <td>Ảnh</td>
+                        <td>Tên nhân viên</td>
+                        <td>Ngày sinh</td>
+                        <td>Địa chỉ</td>
+          
+                        <td>Điện thoại</td>
+                        <td>Email</td>
+                        <td>
+                        </td>
+                    </tr>
+
+
+                </thead>
+                <tbody>
+                    @for (int i = 1; i <= 10; i++)
+                    {
+                        <tr>
+
+                            <td>Ảnh 1</td>
+                            <td>Nguyễn Văn A</td>
+                            <td>20/09/2003</td>
+                            <td>123 phùng hùng</td>
+                            <td>034342344</td>
+                            <td>phunghungcty@gmail.com</td>
+                            <td>
+                                <a href="~/Admin/Employees/Edit/123" class="btn btn-xs btn-info">
+                                    <i class="fa fa-edit"></i>
+                                </a>
+
+                                <a href="~/Admin/Employees/delete/123" class="btn btn-xs btn-danger">
+                                    <i class="fa fa-remove"></i>
+                                </a>
+
+                            </td>
+                        </tr>
+                    }
+
+                </tbody>
+            </table>
+
+        </div>
+        <div class="text-center">
+            <ul class="pagination">
+                <li><a href="#">1</a></li>
+                <li class="active"><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
