@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\SV20T1080033.Web.bundle.scp.css"
     },
     {
+      "Id": "G:\\.NET\\SV20T1080033\\SV20T1080033.Web\\wwwroot\\Images\\Products\\samsung.jpg",
+      "PackagePath": "staticwebassets\\Images\\Products\\samsung.jpg"
+    },
+    {
       "Id": "G:\\.NET\\SV20T1080033\\SV20T1080033.Web\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

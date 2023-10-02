@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cKMHAlhxMjrlN0odFSvcLQRMQDA6DlFi6c4Y4mgSmTA=",
+  "Hash": "UIOLQp7eXkSjIoJA0ub1LzuMU6WPT28bs45IqP2Cj5s=",
   "Source": "SV20T1080033.Web",
   "BasePath": "_content/SV20T1080033.Web",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "G:\\.NET\\SV20T1080033\\SV20T1080033.Web\\wwwroot\\Images\\Products\\samsung.jpg",
+      "SourceId": "SV20T1080033.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "G:\\.NET\\SV20T1080033\\SV20T1080033.Web\\wwwroot\\",
+      "BasePath": "_content/SV20T1080033.Web",
+      "RelativePath": "Images/Products/samsung.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Products\\samsung.jpg"
     },
     {
       "Identity": "G:\\.NET\\SV20T1080033\\SV20T1080033.Web\\wwwroot\\js\\site.js",

@@ -19,6 +19,12 @@ namespace SV20T1080033.Web.Areas.Admin.Controllers
             ViewBag.Title = "Cập nhật nhân viên";
             return View("Create");
         }
+
+        public IActionResult Repass()
+        {
+            ViewBag.Title = "Đổi mật khẩu";
+            return View();
+        }
         public IActionResult Delete(int id = 0)
         {
             return View();
