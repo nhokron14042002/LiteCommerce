@@ -1,4 +1,5 @@
-﻿@{
+﻿@model IEnumerable<SV20T1080033.DomainModels.Product>
+@{
     ViewBag.Title = "Quản lý Mặt hàng";
 }
 
@@ -27,7 +28,7 @@
                            class="form-control"
                            placeholder="Nhập tên mặt hàng cần tìm">
                     <span class="input-group-btn">
-                        <button type="submit" name="search" id="search-btn" class="btn btn-flat btn-info">
+                        <button type="submit" name="searchValue" id="search-btn" class="btn btn-flat btn-info">
                             <i class="fa fa-search"></i>
                         </button>
                         <a href="~/Admin/Product/Create"
@@ -40,9 +41,9 @@
             </div>
         </form>
 
-        <p style="margin:10px 0 10px 0">
-            Có <strong>1,210</strong> mặt hàng trong tổng số <strong>101</strong> trang
-        </p>
+      @*   <p style="margin:10px 0 10px 0">
+            Có <strong>@ViewBag.rowCount</strong> loại hàng. Hiện ở trang <strong>@ViewBag.Page</strong> trên tổng số <strong>@Math.Ceiling((double)ViewBag.rowCount/10)</strong> trang
+        </p> *@
 
         <div class="table-responsive">
             <table class="table table-bordered table-hover table-striped">
@@ -56,15 +57,15 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @for (int i = 1; i <= 3; i++)
+                    @foreach (var item in Model)
                     {
                         <tr>
                             <td>
                                 <img src="~/images/products/samsung.jpg" style="width:80px" />
                             </td>
-                            <td style="vertical-align:middle">Samsung Series 9 NP900X4C Premium Ultrabook</td>
-                            <td style="vertical-align:middle">Fullbox</td>
-                            <td style="vertical-align:middle">23,900,000</td>
+                            <td style="vertical-align:middle">@item.ProductName</td>
+                            <td style="vertical-align:middle">@item.ProductDescription</td>
+                            <td style="vertical-align:middle">@String.Format("{0:0,0}",item.Price)</td>
                             <td class="text-right" style="vertical-align:middle">
                                 <a href="~/Admin/Product/Edit/123" class="btn btn-xs btn-flat btn-info">
                                     <i class="fa fa-edit"></i>
@@ -90,4 +91,3 @@
         </ul>
     </div>
 </div>
-

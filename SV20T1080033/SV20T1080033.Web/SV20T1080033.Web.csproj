@@ -6084,4 +6084,10 @@
     <None Include="wwwroot\themes\bower_components\select2\src\scss\_single.scss" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SV20T1080033.BusinessLayers\SV20T1080033.BusinessLayers.csproj" />
+    <ProjectReference Include="..\SV20T1080033.DataLayers\SV20T1080033.DataLayers.csproj" />
+    <ProjectReference Include="..\SV20T1080033.DomainModels\SV20T1080033.DomainModels.csproj" />
+  </ItemGroup>
+
 </Project>

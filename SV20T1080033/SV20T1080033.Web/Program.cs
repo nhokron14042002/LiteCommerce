@@ -1,5 +1,3 @@
-using Microsoft.AspNetCore.Builder;
-
 internal class Program
 {
     private static void Main(string[] args)
@@ -25,10 +23,10 @@ internal class Program
         app.UseEndpoints(endpoints =>
         {
             endpoints.MapAreaControllerRoute(
-                name:"areaAdmin",
-                areaName:"Admin",
-                pattern: "{area:exists}/{controller=DashBoard}/{action=Index}/{id?}"
-                );
+                name: "areaAdmin",
+                areaName: "Admin",
+                pattern: "admin/{controller=Dashboard}/{action=Index}/{id?}"
+            );
             endpoints.MapControllerRoute(
               name: "areas",
               pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
